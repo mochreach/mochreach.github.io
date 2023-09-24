@@ -23,3 +23,18 @@ point and click GUI."
 Keep an eye on my YouTube channel and Twitter for updates. Once it's in a decent
 state, I'm going to release an alpha through my Patreon, then a general release
 will follow.
+
+### MIDI Surf
+
+https://midisurf.app
+
+A customisable, web-based MIDI controller that enables you to control any device. Great
+for performance and you can **SHARE PRESETS THROUGH A URL**! Here's it in action:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pyYI9P14yCM?si=leyFi1ApPnc6K1sp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Contact Me
+
+If you'd like to get in touch, please feel free to email me at
+[hello@mochreach.dev](mailto:hello@mochreach.dev) or send me a message on
+[Twitter](https://twitter.com/MoChreachMusicT).
