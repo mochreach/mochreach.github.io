@@ -1,0 +1,25 @@
+# Shown in the Projects section, in this order. `video` is a YouTube id from _data/videos.json.
+- name: MIDI Surf
+  status: Live
+  blurb: A customisable MIDI controller that runs in your browser, on phones and tablets too, and works offline. Faders, XY pads, chord banks and isomorphic keyboards, and you can share presets as a link.
+  url: https://midisurf.app
+  url_label: Open MIDI Surf
+  code: https://github.com/mochreach/midi-surf
+  video: a2TxqJtEovM
+  tech: Elm
+- name: Lattice
+  status: In development
+  blurb: A keyboard-driven audio tracker inspired by Vim. Baffling at first, then fun, then no gap at all between a musical idea and a finished song.
+  tech: Rust
+- name: FunDSP synth example
+  status: Open source
+  blurb: A minimal example of making sound in Rust with FunDSP and CPAL, written alongside the video tutorial. A small, hackable starting point for audio programming.
+  code: https://github.com/mochreach/fundsp-example
+  video: R6v96c-ahAM
+  tech: Rust
+- name: Chords Videopak
+  status: Open source
+  blurb: An extension for the OP-Z app that lets you play chords in different keys, modes and forms, controlled from the OP-Z's Motion track.
+  code: https://github.com/mochreach/chords
+  video: b_P6xPE4eFM
+  tech: Unity · C#

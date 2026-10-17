@@ -1,2 +1,13 @@
-title: Mo chreach! Music Technology
-description: Information, news and contact details for Mo Chreach! Music Technology
+title: Mo Chreach! Music Technology
+description: Tutorials, live jams and free, open-source music software from Scotland. In-depth guides to the OP-XY, EP-133 and OP-Z, and tools like MIDI Surf.
+url: https://mochreach.dev
+lang: en-GB
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - scripts
+defaults:
+  - scope: { path: "" }
+    values: { layout: default, image: /assets/img/og.png }

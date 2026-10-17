@@ -1,0 +1,13 @@
+{% assign v = include.video %}<li class="card video{% if v.kind == 'short' %} is-short{% endif %}" data-kind="{{ v.kind }}" data-topics="{{ v.topics | join: '|' }}" data-search="{{ v.title | downcase | escape }} {{ v.topics | join: ' ' | downcase }}">
+  <a href="{{ v.url }}">
+    <span class="thumb">
+      <img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+      {% if v.kind == 'stream' %}<span class="tag tag-red">Live stream</span>{% elsif v.kind == 'short' %}<span class="tag tag-yellow">Short</span>{% endif %}
+      {% if v.duration > 0 %}<span class="len">{{ v.length }}</span>{% endif %}
+    </span>
+    <span class="card-body">
+      <span class="card-title">{{ v.title | replace: "OP-", "OP‑" | replace: "EP-", "EP‑" | replace: "SP-", "SP‑" }}</span>
+      <span class="meta">{{ v.month }} · {{ v.views_label }} views</span>
+    </span>
+  </a>
+</li>

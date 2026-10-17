@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="preload" href="/assets/fonts/rubik-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css?v={{ site.time | date: '%s' }}">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  {% seo %}
+</head>
+<body class="{{ page.body_class }}">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="/" aria-label="Mo Chreach! home">
+        <img src="/assets/img/logo.png" alt="" width="40" height="40">
+        <span>Mo Chreach!</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="/#videos">Videos</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#about">About</a>
+        <a href="/#support">Support</a>
+      </nav>
+      <a class="btn btn-small btn-yellow" href="{{ site.data.channel.url }}?sub_confirmation=1">Subscribe</a>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <div class="foot-brand">
+        <img src="/assets/img/logo.png" alt="" width="56" height="56" loading="lazy">
+        <p>Mo Chreach! Music Technology Ltd<br><span class="muted">Made in Scotland</span></p>
+      </div>
+      <ul class="foot-links">
+        <li><a href="{{ site.data.channel.url }}">YouTube</a></li>
+        <li><a href="https://discord.gg/NJbzRZav7w">Discord</a></li>
+        <li><a href="https://github.com/mochreach">GitHub</a></li>
+        <li><a href="https://www.patreon.com/mochreach">Patreon</a></li>
+        <li><a href="https://ko-fi.com/mochreach">Ko-fi</a></li>
+        <li><a href="mailto:hello@mochreach.dev">hello@mochreach.dev</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v={{ site.time | date: '%s' }}" defer></script>
+</body>
+</html>

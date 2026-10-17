@@ -1,0 +1,183 @@
+---
+title: Mo Chreach! Music Technology
+body_class: home
+---
+{% assign channel = site.data.channel %}
+{% assign ranked = site.data.videos | where: "kind", "video" | sort: "views" | reverse %}
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Music technology · Scotland</p>
+      <h1>Synth tutorials, live jams and <mark>free tools</mark> for making music.</h1>
+      <p class="lede">I'm Chris. I make in-depth guides to Teenage Engineering gear and other instruments, jam
+        live on the channel, and build open-source software for musicians.</p>
+      <div class="actions">
+        <a class="btn btn-yellow" href="{{ channel.url }}?sub_confirmation=1">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.8 15V9l5.7 3-5.7 3Z"/></svg>
+          Subscribe on YouTube
+        </a>
+        <a class="btn btn-ghost" href="#videos">Browse the videos</a>
+      </div>
+      <dl class="stats">
+        <div><dt>Subscribers</dt><dd>{{ channel.subscribers_label }}</dd></div>
+        <div><dt>Videos</dt><dd>{{ channel.videos }}</dd></div>
+        <div><dt>Views</dt><dd>{{ channel.views_label }}</dd></div>
+      </dl>
+    </div>
+    <div class="hero-logo">
+      <img src="/assets/img/logo-1024.png" alt="The Mo Chreach! logo" width="1024" height="1024" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    {% for i in (1..2) %}<span>OP-XY</span><span>EP-133 K.O. II</span><span>OP-Z</span><span>SP-404MKII</span><span>Pocket Operators</span><span>Digitone</span><span>MIDI</span><span>Rust</span><span>Python</span>{% endfor %}
+  </div>
+</div>
+
+<section class="section" id="start">
+  <div class="wrap">
+    <p class="eyebrow">Start here</p>
+    <h2>The big ones</h2>
+    <ol class="featured">
+      {% for v in ranked limit: 3 %}
+      <li class="card feature">
+        <a href="{{ v.url }}">
+          <span class="thumb">
+            <img src="https://i.ytimg.com/vi/{{ v.id }}/maxresdefault.jpg" alt="" loading="lazy" width="1280" height="720">
+            <span class="len">{{ v.length }}</span>
+          </span>
+          <span class="card-body">
+            <span class="num">0{{ forloop.index }}</span>
+            <span class="card-title">{{ v.title | replace: "OP-", "OP‑" | replace: "EP-", "EP‑" | replace: "SP-", "SP‑" }}</span>
+            {% if v.summary != "" %}<span class="summary">{{ v.summary }}</span>{% endif %}
+            <span class="meta">{{ v.views_label }} views{% if v.chapters > 0 %} · {{ v.chapters }} chapters{% endif %}</span>
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="videos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">The library</p>
+        <h2>Every video</h2>
+      </div>
+      <label class="search">
+        <span class="visually-hidden">Search videos</span>
+        <input type="search" placeholder="Search videos" autocomplete="off" data-search>
+      </label>
+    </div>
+
+    <div class="filters" data-filters hidden>
+      <div class="chips" role="group" aria-label="Topic">
+        <button type="button" class="chip" aria-pressed="true" data-topic="">All</button>
+        {% for t in channel.topics %}<button type="button" class="chip" aria-pressed="false" data-topic="{{ t }}">{{ t }}</button>{% endfor %}
+      </div>
+      <div class="kinds" role="group" aria-label="Kind">
+        <button type="button" class="kind" aria-pressed="true" data-kind="">Everything</button>
+        <button type="button" class="kind" aria-pressed="false" data-kind="video">Videos</button>
+        <button type="button" class="kind" aria-pressed="false" data-kind="stream">Live streams</button>
+        <button type="button" class="kind" aria-pressed="false" data-kind="short">Shorts</button>
+      </div>
+    </div>
+
+    <ul class="grid" data-grid>
+      {% for v in site.data.videos %}{% include video-card.html video=v %}{% endfor %}
+    </ul>
+    <p class="empty" data-empty hidden>Nothing matches that. Try another topic or search.</p>
+    <div class="more"><button type="button" class="btn btn-ghost" data-more hidden>Show all videos</button></div>
+  </div>
+</section>
+
+<section class="section section-alt" id="projects">
+  <div class="wrap">
+    <p class="eyebrow">Open source</p>
+    <h2>Things I've made</h2>
+    <p class="section-lede">Everything I build is free and open source. Use it, fork it, send a pull request.</p>
+    <ul class="projects">
+      {% for p in site.data.projects %}
+      <li class="card project">
+        <div class="project-head">
+          <h3>{{ p.name }}</h3>
+          <span class="status{% if p.status == 'Live' %} status-live{% endif %}">{{ p.status }}</span>
+        </div>
+        <p>{{ p.blurb }}</p>
+        <p class="meta">{{ p.tech }}</p>
+        <div class="project-links">
+          {% if p.url %}<a class="btn btn-small btn-yellow" href="{{ p.url }}">{{ p.url_label }}</a>{% endif %}
+          {% if p.code %}<a class="btn btn-small btn-ghost" href="{{ p.code }}">Code</a>{% endif %}
+          {% if p.video %}<a class="btn btn-small btn-ghost" href="https://www.youtube.com/watch?v={{ p.video }}">Watch</a>{% endif %}
+          {% unless p.url or p.code %}<a class="btn btn-small btn-ghost" href="{{ channel.url }}">Follow along on YouTube</a>{% endunless %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>A one-person music tech company</h2>
+    </div>
+    <div class="prose">
+      <p>Mo Chreach! Music Technology Ltd is a small company based in Scotland, set up in 2023 to make software for
+        audio. That sounds grand, but really it's just me: I'm passionate about music and technology, and I love
+        making things.</p>
+      <p>The channel started as a place to share songs and tutorials, and grew into long, careful guides to the
+        instruments I use, like the OP-XY video manual, with chapters for every feature. Alongside that there are live
+        jams, coding tutorials for audio and MIDI, and videos about the tools I build.</p>
+      <p><em>Mo chreach!</em> is Scottish Gaelic, roughly "my ruin!": an old cry of dismay, and a fair description
+        of what happens to your bank balance once you get into synths.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="support">
+  <div class="wrap">
+    <p class="eyebrow">Support the channel</p>
+    <h2>Keep the videos coming</h2>
+    <p class="section-lede">Everything here is free. If it's helped you, these keep it that way.</p>
+    <ul class="support">
+      <li class="card tile">
+        <h3>Patreon</h3>
+        <p>Monthly support, and early access to new software as it reaches alpha.</p>
+        <a class="btn btn-small btn-yellow" href="https://www.patreon.com/mochreach">Join on Patreon</a>
+      </li>
+      <li class="card tile">
+        <h3>Ko-fi</h3>
+        <p>Send a one-off tip, or pick up presets and sample packs from the shop.</p>
+        <a class="btn btn-small btn-yellow" href="https://ko-fi.com/mochreach">Visit Ko-fi</a>
+      </li>
+      <li class="card tile">
+        <h3>Channel membership</h3>
+        <p>Become a member on YouTube for perks and members-only videos.</p>
+        <a class="btn btn-small btn-yellow" href="{{ channel.url }}/join">Join on YouTube</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="community">
+  <div class="wrap community">
+    <div>
+      <p class="eyebrow">Community</p>
+      <h2>Come and say hello</h2>
+      <p class="section-lede">Questions about a video, a bug in MIDI Surf, or just want to share what you're making?
+        The Discord is the best place. For anything else, email me.</p>
+    </div>
+    <div class="community-links">
+      <a class="btn btn-yellow" href="https://discord.gg/NJbzRZav7w">Join the Discord</a>
+      <a class="btn btn-ghost" href="mailto:hello@mochreach.dev">hello@mochreach.dev</a>
+      <a class="btn btn-ghost" href="https://github.com/mochreach">GitHub</a>
+    </div>
+  </div>
+</section>
