@@ -189,6 +189,21 @@ p { margin: 0 0 1em; }
   .featured .feature:not(:first-child) .summary { display: block; }
 }
 
+/* Latest */
+.section-latest { padding-bottom: 0; }
+.latest { margin-top: 1.4em; }
+.latest > a { display: grid; grid-template-columns: 1.5fr 1fr; }
+.latest .card-body { justify-content: center; gap: 14px; padding: clamp(22px, 3vw, 40px); }
+.latest .card-title { font-size: clamp(1.5rem, 3vw, 2.3rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1.08; }
+.latest .summary { font-size: 1.02rem; }
+.latest .meta { margin-top: 0; }
+.latest .new { align-self: flex-start; font: 500 0.75rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.1em; padding: 6px 9px; border-radius: 6px; background: var(--red); color: #fff; }
+.latest .btn { align-self: flex-start; }
+.latest:hover .btn { background: #fff; }
+@media (max-width: 860px) {
+  .latest > a { grid-template-columns: 1fr; }
+}
+
 /* Library */
 .search input {
   width: min(320px, 80vw); min-height: 46px; padding: 0 18px 0 44px;

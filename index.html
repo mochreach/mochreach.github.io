@@ -4,6 +4,7 @@ body_class: home
 ---
 {% assign channel = site.data.channel %}
 {% assign ranked = site.data.videos | where: "kind", "video" | sort: "views" | reverse %}
+{% assign latest = site.data.videos | where: "kind", "video" | first %}
 
 <section class="hero">
   <div class="wrap hero-inner">
@@ -36,6 +37,27 @@ body_class: home
     {% for i in (1..2) %}<span>OP-XY</span><span>EP-133 K.O. II</span><span>OP-Z</span><span>SP-404MKII</span><span>Pocket Operators</span><span>Digitone</span><span>MIDI</span><span>Rust</span><span>Python</span>{% endfor %}
   </div>
 </div>
+
+<section class="section section-latest" id="latest">
+  <div class="wrap">
+    <p class="eyebrow">Latest video</p>
+    <article class="card latest">
+      <a href="{{ latest.url }}">
+        <span class="thumb">
+          <img src="https://i.ytimg.com/vi/{{ latest.id }}/maxresdefault.jpg" alt="" width="1280" height="720">
+          <span class="len">{{ latest.length }}</span>
+        </span>
+        <span class="card-body">
+          <span class="new">New</span>
+          <span class="card-title">{{ latest.title | replace: "OP-", "OP‑" | replace: "EP-", "EP‑" | replace: "SP-", "SP‑" }}</span>
+          {% if latest.summary != "" %}<span class="summary">{{ latest.summary }}</span>{% endif %}
+          <span class="meta">{{ latest.month }}{% if latest.chapters > 0 %} · {{ latest.chapters }} chapters{% endif %}</span>
+          <span class="btn btn-yellow btn-small">Watch now</span>
+        </span>
+      </a>
+    </article>
+  </div>
+</section>
 
 <section class="section" id="start">
   <div class="wrap">

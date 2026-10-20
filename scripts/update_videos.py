@@ -66,7 +66,7 @@ def summary(description: str) -> str:
         if len(para) > 40 and "join this channel" not in para.lower():
             if len(para) <= 220:
                 return para
-            sentences = re.findall(r"[^.!?]+[.!?]+", para)
+            sentences = re.findall(r".+?[.!?]+(?=\s|$)", para)  # not at the dots in "1.2.0"
             out = ""
             for sentence in sentences:
                 if len(out) + len(sentence) > 220:
