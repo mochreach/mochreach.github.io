@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="wrap">
+  <header class="post-head">
+    <p class="eyebrow"><a href="/blog/">Blog</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+  </header>
+
+  {% if page.video %}
+  <div class="card post-video"><a href="https://www.youtube.com/watch?v={{ page.video }}">
+    <span class="thumb">
+      <img src="https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg" alt="" width="1280" height="720">
+    </span>
+    <span class="card-body">
+      <span class="card-title">Watch the video</span>
+      <span class="btn btn-yellow btn-small">Open on YouTube</span>
+    </span>
+  </a></div>
+  {% endif %}
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <footer class="post-foot">
+    <a class="btn btn-ghost btn-small" href="/blog/">More posts</a>
+    <a class="btn btn-yellow btn-small" href="{{ site.data.channel.url }}?sub_confirmation=1">Subscribe on YouTube</a>
+  </footer>
+</article>

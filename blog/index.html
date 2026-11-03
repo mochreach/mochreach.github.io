@@ -1,0 +1,34 @@
+---
+title: Blog
+description: Written guides, cheat sheets and notes from the Mo Chreach! channel.
+permalink: /blog/
+body_class: page blog
+---
+<div class="wrap">
+  <p class="eyebrow">Blog</p>
+  <h1>Notes from the channel</h1>
+  <p class="lede">Written guides and cheat sheets to go with the videos, and what I'm working on.</p>
+
+  {% if site.posts.size > 0 %}
+  <ol class="post-list">
+    {% for post in site.posts %}
+    <li class="card post-card">
+      <a href="{{ post.url }}">
+        {% if post.video %}
+        <span class="thumb"><img src="https://i.ytimg.com/vi/{{ post.video }}/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span>
+        {% endif %}
+        <span class="card-body">
+          <span class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></span>
+          <span class="card-title">{{ post.title }}</span>
+          <span class="summary">{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</span>
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="muted">The first post is on its way.</p>
+  {% endif %}
+
+  <p class="feed-link"><a href="/feed.xml">Follow the blog with RSS</a></p>
+</div>

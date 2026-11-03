@@ -8,6 +8,9 @@ plugins:
 exclude:
   - README.md
   - scripts
+permalink: /blog/:year/:title/
 defaults:
   - scope: { path: "" }
     values: { layout: default, image: /assets/img/og.png }
+  - scope: { path: "", type: posts }
+    values: { layout: post, body_class: "page post" }
