@@ -14,7 +14,9 @@ body_class: page blog
     {% for post in site.posts %}
     <li class="card post-card">
       <a href="{{ post.url }}">
-        {% if post.video %}
+        {% if post.image and post.image != "/assets/img/og.png" %}
+        <span class="thumb"><img src="{{ post.image }}" alt="" loading="lazy"></span>
+        {% elsif post.video %}
         <span class="thumb"><img src="https://i.ytimg.com/vi/{{ post.video }}/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span>
         {% endif %}
         <span class="card-body">

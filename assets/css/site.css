@@ -298,6 +298,13 @@ p { margin: 0 0 1em; }
 .post-body h2 { font-size: 1.6rem; }
 .post-body h3 { font-size: 1.2rem; margin: 1.6em 0 0.5em; }
 .post-body code { font: 500 0.92em var(--mono); background: var(--surface-hi); color: var(--fg); padding: 2px 6px; border-radius: 6px; white-space: nowrap; }
+.post-body pre { margin: 1.4em 0 1.8em; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow-x: auto; font-size: 0.72rem; line-height: 1.35; }
+.post-body pre code { font: 400 1em/inherit var(--mono); background: none; padding: 0; white-space: pre; color: var(--fg); }
+.post-body blockquote { margin: 1.4em 0; padding-left: 18px; border-left: 3px solid var(--yellow); }
+.post-body img { display: block; max-width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); margin: 1em 0; }
+.post-body .footnotes { margin-top: 3em; padding-top: 1.4em; border-top: 1px solid var(--line); }
+.post-body .footnotes p, .post-body .footnotes li { font-size: 0.95rem; }
+.post-body sup a.footnote { text-decoration: none; padding: 0 2px; }
 .post-body table { width: 100%; border-collapse: collapse; margin: 1em 0 1.6em; font-size: 0.98rem; }
 .post-body th { text-align: left; font: 500 0.75rem/1.2 var(--mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--yellow); padding: 0 12px 10px 0; border-bottom: 1px solid var(--line); }
 .post-body td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); color: var(--muted); vertical-align: top; }
