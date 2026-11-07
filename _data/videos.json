@@ -1,5 +1,35 @@
 [
  {
+  "id": "JWloj1lY85Q",
+  "url": "https://www.youtube.com/watch?v=JWloj1lY85Q",
+  "title": "Switched-On Scarlatti: Sonata in G major, K. 455, played in Lattice",
+  "date": "2026-11-07",
+  "month": "Nov 2026",
+  "duration": 243,
+  "length": "4:03",
+  "views": 0,
+  "views_label": "0",
+  "kind": "video",
+  "topics": [],
+  "summary": "Domenico Scarlatti's Sonata in G major, K. 455, played start to finish in Lattice, the music tracker I've built for the terminal.",
+  "chapters": 0
+ },
+ {
+  "id": "v8xSYmkrPi8",
+  "url": "https://www.youtube.com/shorts/v8xSYmkrPi8",
+  "title": "I built a music tracker that runs in the terminal",
+  "date": "2026-11-07",
+  "month": "Nov 2026",
+  "duration": 58,
+  "length": "0:58",
+  "views": 1,
+  "views_label": "1",
+  "kind": "short",
+  "topics": [],
+  "summary": "Lattice, my music tracker for the terminal, playing Scarlatti on its own synths, with the keyboard lighting up the notes. It's out now, free, for Linux, macOS and Windows:",
+  "chapters": 0
+ },
+ {
   "id": "n9EemR1X34Y",
   "url": "https://www.youtube.com/watch?v=n9EemR1X34Y",
   "title": "Every OP-XY update since launch (firmware 1.0.9 to 1.2.0)",
@@ -7,8 +37,8 @@
   "month": "Oct 2026",
   "duration": 3112,
   "length": "51:52",
-  "views": 11,
-  "views_label": "11",
+  "views": 1339,
+  "views_label": "1.3k",
   "kind": "video",
   "topics": [
    "OP-XY"
@@ -24,8 +54,8 @@
   "month": "Feb 2025",
   "duration": 156,
   "length": "2:36",
-  "views": 421,
-  "views_label": "421",
+  "views": 428,
+  "views_label": "428",
   "kind": "short",
   "topics": [
    "OP-XY"
@@ -41,7 +71,7 @@
   "month": "Jan 2025",
   "duration": 56,
   "length": "0:56",
-  "views": 1315,
+  "views": 1331,
   "views_label": "1.3k",
   "kind": "short",
   "topics": [
@@ -58,7 +88,7 @@
   "month": "Jan 2025",
   "duration": 8600,
   "length": "2:23:20",
-  "views": 1003,
+  "views": 1012,
   "views_label": "1k",
   "kind": "stream",
   "topics": [
@@ -76,8 +106,8 @@
   "month": "Dec 2024",
   "duration": 460,
   "length": "7:40",
-  "views": 771,
-  "views_label": "771",
+  "views": 784,
+  "views_label": "784",
   "kind": "video",
   "topics": [],
   "summary": "Hi everyone, I just wanted to give a brief update on the channel and tell you about my plans for the coming year. Thank you to everyone that has watched my videos and to my subscribers, all the best for 2025!",
@@ -91,8 +121,8 @@
   "month": "Dec 2024",
   "duration": 8808,
   "length": "2:26:48",
-  "views": 714,
-  "views_label": "714",
+  "views": 716,
+  "views_label": "716",
   "kind": "stream",
   "topics": [
    "OP-XY"
@@ -108,13 +138,13 @@
   "month": "Dec 2024",
   "duration": 12422,
   "length": "3:27:02",
-  "views": 70687,
-  "views_label": "71k",
+  "views": 72255,
+  "views_label": "72k",
   "kind": "video",
   "topics": [
    "OP-XY"
   ],
-  "summary": "This is a comprehensive guide to the OP-XY from Teenage Engineering, covering all functionality.",
+  "summary": "New: every OP-XY update since this manual, from firmware 1.0.9 to 1.2.0, is covered in one video:",
   "chapters": 93
  },
  {
@@ -125,7 +155,7 @@
   "month": "Dec 2024",
   "duration": 1339,
   "length": "22:19",
-  "views": 2674,
+  "views": 2719,
   "views_label": "2.7k",
   "kind": "video",
   "topics": [
@@ -142,8 +172,8 @@
   "month": "Dec 2024",
   "duration": 10054,
   "length": "2:47:34",
-  "views": 1334,
-  "views_label": "1.3k",
+  "views": 1359,
+  "views_label": "1.4k",
   "kind": "stream",
   "topics": [
    "OP-XY"
@@ -159,8 +189,8 @@
   "month": "Dec 2024",
   "duration": 8351,
   "length": "2:19:11",
-  "views": 867,
-  "views_label": "867",
+  "views": 877,
+  "views_label": "877",
   "kind": "stream",
   "topics": [
    "OP-XY"
@@ -176,8 +206,8 @@
   "month": "Dec 2024",
   "duration": 14,
   "length": "0:14",
-  "views": 766,
-  "views_label": "766",
+  "views": 773,
+  "views_label": "773",
   "kind": "short",
   "topics": [
    "OP-XY"
@@ -193,8 +223,8 @@
   "month": "Dec 2024",
   "duration": 262,
   "length": "4:22",
-  "views": 355,
-  "views_label": "355",
+  "views": 361,
+  "views_label": "361",
   "kind": "video",
   "topics": [
    "OP-XY"
@@ -210,8 +240,8 @@
   "month": "Dec 2024",
   "duration": 470,
   "length": "7:50",
-  "views": 847,
-  "views_label": "847",
+  "views": 849,
+  "views_label": "849",
   "kind": "video",
   "topics": [
    "OP-XY",
@@ -228,8 +258,8 @@
   "month": "Mar 2024",
   "duration": 13,
   "length": "0:13",
-  "views": 533,
-  "views_label": "533",
+  "views": 538,
+  "views_label": "538",
   "kind": "short",
   "topics": [
    "EP-133"
@@ -245,7 +275,7 @@
   "month": "Mar 2024",
   "duration": 1277,
   "length": "21:17",
-  "views": 14037,
+  "views": 14148,
   "views_label": "14k",
   "kind": "video",
   "topics": [
@@ -262,8 +292,8 @@
   "month": "Feb 2024",
   "duration": 1107,
   "length": "18:27",
-  "views": 255,
-  "views_label": "255",
+  "views": 256,
+  "views_label": "256",
   "kind": "video",
   "topics": [],
   "summary": "To celebrate reaching 1,000 subscribers, I thought I'd make a video about this channel and the very positive effect that it's had on my life so far. I hope that it's interesting or useful or entertaining or something!",
@@ -277,8 +307,8 @@
   "month": "Feb 2024",
   "duration": 207,
   "length": "3:27",
-  "views": 308,
-  "views_label": "308",
+  "views": 309,
+  "views_label": "309",
   "kind": "video",
   "topics": [
    "OP-Z"
@@ -294,8 +324,8 @@
   "month": "Feb 2024",
   "duration": 19,
   "length": "0:19",
-  "views": 626,
-  "views_label": "626",
+  "views": 630,
+  "views_label": "630",
   "kind": "short",
   "topics": [
    "OP-Z"
@@ -311,8 +341,8 @@
   "month": "Feb 2024",
   "duration": 48,
   "length": "0:48",
-  "views": 423,
-  "views_label": "423",
+  "views": 424,
+  "views_label": "424",
   "kind": "short",
   "topics": [
    "EP-133"
@@ -328,8 +358,8 @@
   "month": "Feb 2024",
   "duration": 30,
   "length": "0:30",
-  "views": 737,
-  "views_label": "737",
+  "views": 741,
+  "views_label": "741",
   "kind": "short",
   "topics": [
    "SP-404",
@@ -346,7 +376,7 @@
   "month": "Feb 2024",
   "duration": 298,
   "length": "4:58",
-  "views": 2865,
+  "views": 2896,
   "views_label": "2.9k",
   "kind": "video",
   "topics": [
@@ -363,8 +393,8 @@
   "month": "Feb 2024",
   "duration": 1591,
   "length": "26:31",
-  "views": 2448,
-  "views_label": "2.4k",
+  "views": 2471,
+  "views_label": "2.5k",
   "kind": "video",
   "topics": [
    "MIDI Surf"
@@ -380,7 +410,7 @@
   "month": "Jan 2024",
   "duration": 13,
   "length": "0:13",
-  "views": 2104,
+  "views": 2106,
   "views_label": "2.1k",
   "kind": "short",
   "topics": [
@@ -398,7 +428,7 @@
   "month": "Jan 2024",
   "duration": 12,
   "length": "0:12",
-  "views": 2166,
+  "views": 2167,
   "views_label": "2.2k",
   "kind": "short",
   "topics": [
@@ -415,8 +445,8 @@
   "month": "Jan 2024",
   "duration": 49,
   "length": "0:49",
-  "views": 801,
-  "views_label": "801",
+  "views": 809,
+  "views_label": "809",
   "kind": "short",
   "topics": [
    "Jams"
@@ -432,7 +462,7 @@
   "month": "Jan 2024",
   "duration": 60,
   "length": "1:00",
-  "views": 1381,
+  "views": 1393,
   "views_label": "1.4k",
   "kind": "short",
   "topics": [
@@ -449,7 +479,7 @@
   "month": "Jan 2024",
   "duration": 302,
   "length": "5:02",
-  "views": 1414,
+  "views": 1417,
   "views_label": "1.4k",
   "kind": "video",
   "topics": [
@@ -467,8 +497,8 @@
   "month": "Jan 2024",
   "duration": 3095,
   "length": "51:35",
-  "views": 5592,
-  "views_label": "5.6k",
+  "views": 5693,
+  "views_label": "5.7k",
   "kind": "video",
   "topics": [
    "Coding"
@@ -484,7 +514,7 @@
   "month": "Dec 2023",
   "duration": 256,
   "length": "4:16",
-  "views": 3229,
+  "views": 3233,
   "views_label": "3.2k",
   "kind": "video",
   "topics": [
@@ -502,8 +532,8 @@
   "month": "Dec 2023",
   "duration": 1235,
   "length": "20:35",
-  "views": 52385,
-  "views_label": "52k",
+  "views": 52818,
+  "views_label": "53k",
   "kind": "video",
   "topics": [
    "EP-133"
@@ -519,8 +549,8 @@
   "month": "Jun 2023",
   "duration": 9968,
   "length": "2:46:08",
-  "views": 573,
-  "views_label": "573",
+  "views": 577,
+  "views_label": "577",
   "kind": "stream",
   "topics": [
    "Pocket Operators"
@@ -536,8 +566,8 @@
   "month": "Mar 2023",
   "duration": 693,
   "length": "11:33",
-  "views": 898,
-  "views_label": "898",
+  "views": 900,
+  "views_label": "900",
   "kind": "video",
   "topics": [
    "OP-Z"
@@ -553,7 +583,7 @@
   "month": "Mar 2023",
   "duration": 1042,
   "length": "17:22",
-  "views": 5592,
+  "views": 5595,
   "views_label": "5.6k",
   "kind": "video",
   "topics": [
@@ -570,7 +600,7 @@
   "month": "Feb 2023",
   "duration": 1035,
   "length": "17:15",
-  "views": 3275,
+  "views": 3280,
   "views_label": "3.3k",
   "kind": "video",
   "topics": [
@@ -588,8 +618,8 @@
   "month": "Jan 2023",
   "duration": 452,
   "length": "7:32",
-  "views": 361,
-  "views_label": "361",
+  "views": 365,
+  "views_label": "365",
   "kind": "video",
   "topics": [
    "MIDI Surf"
@@ -605,7 +635,7 @@
   "month": "Jan 2023",
   "duration": 571,
   "length": "9:31",
-  "views": 5982,
+  "views": 6021,
   "views_label": "6k",
   "kind": "video",
   "topics": [
@@ -622,8 +652,8 @@
   "month": "Jan 2023",
   "duration": 58,
   "length": "0:58",
-  "views": 456,
-  "views_label": "456",
+  "views": 458,
+  "views_label": "458",
   "kind": "short",
   "topics": [
    "MIDI Surf"
@@ -639,7 +669,7 @@
   "month": "Jan 2023",
   "duration": 900,
   "length": "15:00",
-  "views": 3354,
+  "views": 3383,
   "views_label": "3.4k",
   "kind": "video",
   "topics": [
@@ -656,7 +686,7 @@
   "month": "Dec 2022",
   "duration": 1142,
   "length": "19:02",
-  "views": 38703,
+  "views": 38873,
   "views_label": "39k",
   "kind": "video",
   "topics": [
@@ -673,7 +703,7 @@
   "month": "Mar 2022",
   "duration": 1005,
   "length": "16:45",
-  "views": 8764,
+  "views": 8783,
   "views_label": "8.8k",
   "kind": "video",
   "topics": [
@@ -690,7 +720,7 @@
   "month": "Feb 2022",
   "duration": 436,
   "length": "7:16",
-  "views": 10380,
+  "views": 10421,
   "views_label": "10k",
   "kind": "video",
   "topics": [
@@ -707,8 +737,8 @@
   "month": "Jan 2022",
   "duration": 231,
   "length": "3:51",
-  "views": 304,
-  "views_label": "304",
+  "views": 305,
+  "views_label": "305",
   "kind": "video",
   "topics": [
    "Elektron",
@@ -725,7 +755,7 @@
   "month": "Jan 2022",
   "duration": 60,
   "length": "1:00",
-  "views": 1259,
+  "views": 1279,
   "views_label": "1.3k",
   "kind": "short",
   "topics": [
@@ -742,7 +772,7 @@
   "month": "Jan 2022",
   "duration": 741,
   "length": "12:21",
-  "views": 3482,
+  "views": 3489,
   "views_label": "3.5k",
   "kind": "video",
   "topics": [
