@@ -5,3 +5,8 @@ releases: https://github.com/mochreach/lattice/releases
 manual: https://github.com/mochreach/lattice/tree/main/docs/manual
 install_sh: https://raw.githubusercontent.com/mochreach/lattice/main/install.sh
 install_ps1: https://raw.githubusercontent.com/mochreach/lattice/main/install.ps1
+# The video at the top of /lattice/: Lattice playing, to hear before reading about it.
+video:
+  id: JWloj1lY85Q
+  title: "Switched-On Scarlatti: Sonata in G major, K. 455, played in Lattice"
+  caption: Scarlatti's Sonata in G major, K. 455, start to finish on Lattice's own instruments, the keyboard lighting the notes as they play.

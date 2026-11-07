@@ -102,3 +102,21 @@
     });
   }
 })();
+
+// The video: a thumbnail until it's clicked, then YouTube's player (from youtube-nocookie.com), so nothing loads
+// from YouTube beyond the thumbnail until someone asks. Without JS the thumbnail links to the video.
+for (const link of document.querySelectorAll("[data-embed]")) {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const frame = document.createElement("iframe");
+    frame.src = `https://www.youtube-nocookie.com/embed/${link.dataset.embed}?autoplay=1&rel=0`;
+    frame.title = link.getAttribute("aria-label").replace(/^Play /, "");
+    frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    frame.allowFullscreen = true;
+    const box = document.createElement("div");
+    box.className = "thumb";
+    box.append(frame);
+    link.replaceWith(box);
+    frame.focus();
+  });
+}

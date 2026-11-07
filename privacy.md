@@ -14,7 +14,8 @@ its own [YouTube channel](https://www.youtube.com/@mochreach), which isn't offer
 ## This website
 
 mochreach.dev is hosted on GitHub Pages. It uses no cookies, analytics or tracking. Video thumbnails are loaded
-from YouTube's image servers, so YouTube sees those requests; GitHub may keep server logs as described in
+from YouTube's image servers, so YouTube sees those requests. The video on the Lattice page loads YouTube's
+player, from youtube-nocookie.com, only when you press play; from then on YouTube's privacy policy applies. GitHub may keep server logs as described in
 [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
 ## Mo Chreach Tools: what it accesses

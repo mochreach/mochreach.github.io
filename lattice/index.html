@@ -58,6 +58,15 @@ image: /assets/img/lattice/pattern.webp
 
 <section class="section">
   <div class="wrap">
+    {% assign v = l.video %}
+    <figure class="lattice-video">
+      <a class="thumb" href="https://www.youtube.com/watch?v={{ v.id }}" data-embed="{{ v.id }}" aria-label="Play {{ v.title }}">
+        <img src="https://i.ytimg.com/vi/{{ v.id }}/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy">
+        <span class="play" aria-hidden="true"></span>
+      </a>
+      <figcaption>{{ v.caption }}</figcaption>
+    </figure>
+
     <div class="lattice-shots">
       <figure>
         <a href="/assets/img/lattice/pattern.webp"><img src="/assets/img/lattice/pattern.webp" alt="Lattice's pattern page: Scarlatti's notes reading down in columns, one per track, grouped under Right hand" width="987" height="1152" loading="lazy"></a>
