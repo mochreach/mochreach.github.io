@@ -1,7 +1,7 @@
 ---
 title: "A new era of deeply personal software"
 description: "Software has been getting worse for years, and we now have the tools to write our own from scratch. What that's meant for my computer, my music, and Lattice, a tracker made for an audience of one."
-image: /assets/img/blog/lattice-instruments.webp
+image: /assets/img/lattice/instruments.webp
 ---
 
 I've been thinking a lot about what software development means in the age of agentic programming.
@@ -145,8 +145,9 @@ anything in my voice, like the manual. I want people to enjoy those, but not to 
 because then it's not deeply personal and that defeats the point. Go and make the software that **you** want to use
 and make it deeply personal.
 
-[^soon]: Lattice isn't public yet, but it's coming soon: the source, videos about it on the
-    [channel](https://www.youtube.com/@mochreach), and a release you can use yourself. Here's a first look, the
-    instrument page from the Scarlatti example, with Krell on the left:
+[^soon]: Update: Lattice is out now. [Install it here](/lattice/), or find the source on
+    [GitHub](https://github.com/mochreach/lattice). Videos about it are coming on the
+    [channel](https://www.youtube.com/@mochreach). Here's the instrument page from the Scarlatti example, with Krell
+    at the top left:
 
-    ![Lattice's instrument page: Krell, Lead, Echo, Arp and Bass side by side, each with its hand-drawn art above its settings](/assets/img/blog/lattice-instruments.webp)
+    ![Lattice's instrument page: Krell, Lead, Arp and Bass, each with its hand-drawn art above its settings](/assets/img/lattice/instruments.webp)

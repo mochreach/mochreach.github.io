@@ -6,6 +6,14 @@ body_class: home
 {% assign ranked = site.data.videos | where: "kind", "video" | sort: "views" | reverse %}
 {% assign latest = site.data.videos | where: "kind", "video" | first %}
 
+<section class="release" aria-label="Lattice is out">
+  <canvas class="fractal" data-fractal aria-hidden="true"></canvas>
+  <div class="wrap release-inner">
+    <p><span class="new">New</span><strong>Lattice {{ site.data.lattice.version }} is out:</strong> my keyboard-driven music tracker for the terminal, with its own synths, sampling and effects.</p>
+    <a class="btn btn-small btn-yellow" href="/lattice/">Get Lattice</a>
+  </div>
+</section>
+
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-text">
@@ -198,3 +206,5 @@ body_class: home
     </div>
   </div>
 </section>
+
+<script src="/assets/js/lattice.js?v={{ site.time | date: '%s' }}" defer></script>

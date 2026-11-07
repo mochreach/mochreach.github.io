@@ -8,8 +8,11 @@
   video: a2TxqJtEovM
   tech: Elm
 - name: Lattice
-  status: In development
-  blurb: A keyboard-driven audio tracker inspired by Vim. Baffling at first, then fun, then no gap at all between a musical idea and a finished song.
+  status: Live
+  blurb: The keyboard hacker's audio tracker. Make music in your terminal, driven entirely from the keyboard, with its own sequencer, synths, sampling and effects.
+  url: /lattice/
+  url_label: Get Lattice
+  code: https://github.com/mochreach/lattice
   tech: Rust
 - name: FunDSP synth example
   status: Open source

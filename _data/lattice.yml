@@ -1,0 +1,7 @@
+# Lattice's install commands and latest release, for /lattice/ and the home page. Update `version` on each release.
+version: v0.1.0
+repo: https://github.com/mochreach/lattice
+releases: https://github.com/mochreach/lattice/releases
+manual: https://github.com/mochreach/lattice/tree/main/docs/manual
+install_sh: https://raw.githubusercontent.com/mochreach/lattice/main/install.sh
+install_ps1: https://raw.githubusercontent.com/mochreach/lattice/main/install.ps1

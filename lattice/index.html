@@ -1,0 +1,118 @@
+---
+title: Lattice
+description: "Lattice, the keyboard hacker's audio tracker: a music tracker for the terminal with its own sequencer, synths and effects. Install it on Linux, macOS or Windows."
+permalink: /lattice/
+body_class: page lattice
+image: /assets/img/lattice/pattern.webp
+---
+{% assign l = site.data.lattice %}
+{% capture sh %}curl -fsSL {{ l.install_sh }} | sh{% endcapture %}
+{% capture ps1 %}irm {{ l.install_ps1 }} | iex{% endcapture %}
+
+<section class="lattice-hero">
+  <canvas class="fractal" data-fractal aria-hidden="true"></canvas>
+  <div class="wrap lattice-hero-inner">
+    <p class="eyebrow">{{ l.version }} · out now</p>
+    <h1>Lattice</h1>
+    <p class="lede">The keyboard hacker's audio tracker. Make music in your terminal, driven entirely from the
+      keyboard, with a sequencer, synths and effects built from scratch.</p>
+
+    <div class="install" data-install>
+      <div class="install-head">
+        <h2>Install Lattice</h2>
+        <div class="install-tabs" role="tablist" aria-label="Your system" hidden>
+          <button role="tab" data-os="mac">macOS</button>
+          <button role="tab" data-os="linux">Linux</button>
+          <button role="tab" data-os="windows">Windows</button>
+          <button role="tab" data-os="nix">Nix</button>
+        </div>
+      </div>
+
+      <div class="install-panel" data-panel="mac linux">
+        <p class="install-where">On <strong>macOS</strong> or <strong>Linux</strong>, in a terminal:</p>
+        <div class="command"><code>{{ sh }}</code><button class="copy" data-copy="{{ sh | escape }}">Copy</button></div>
+        <p class="install-note">It picks the build for your computer, checks it, and puts <code>lattice</code> in
+          <code>~/.local/bin</code> without sudo. Run it again to update.
+          <a href="{{ l.install_sh }}">Read the script</a> before you pipe it to <code>sh</code>.</p>
+      </div>
+
+      <div class="install-panel" data-panel="windows">
+        <p class="install-where">On <strong>Windows</strong>, in PowerShell:</p>
+        <div class="command"><code>{{ ps1 }}</code><button class="copy" data-copy="{{ ps1 | escape }}">Copy</button></div>
+        <p class="install-note">It puts <code>lattice.exe</code> in <code>%LOCALAPPDATA%\Programs\lattice</code> and
+          adds it to your <code>PATH</code>. Windows is untried so far: <a href="{{ l.repo }}/issues">tell me how it
+          goes</a>. <a href="{{ l.install_ps1 }}">Read the script</a>.</p>
+      </div>
+
+      <div class="install-panel" data-panel="nix">
+        <p class="install-where">With <strong>Nix</strong>, NixOS included:</p>
+        <div class="command"><code>nix run github:mochreach/lattice</code><button class="copy" data-copy="nix run github:mochreach/lattice">Copy</button></div>
+        <p class="install-note">Or add the flake's package to your system. The downloaded builds won't run on NixOS.</p>
+      </div>
+
+      <p class="install-then">Then start with <code>lattice --tutor</code>. Every build is on the
+        <a href="{{ l.releases }}">releases page</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="lattice-shots">
+      <figure>
+        <a href="/assets/img/lattice/pattern.webp"><img src="/assets/img/lattice/pattern.webp" alt="Lattice's pattern page: Scarlatti's notes reading down in columns, one per track, grouped under Right hand" width="987" height="1152" loading="lazy"></a>
+        <figcaption>The pattern: rows are time, columns are tracks.</figcaption>
+      </figure>
+      <figure>
+        <a href="/assets/img/lattice/song.webp"><img src="/assets/img/lattice/song.webp" alt="Lattice's song page: the arrangement's entries down the left, and a coloured map of which tracks play in each bar" width="987" height="1152" loading="lazy"></a>
+        <figcaption>The song: patterns in order, and what plays when.</figcaption>
+      </figure>
+      <figure>
+        <a href="/assets/img/lattice/instruments.webp"><img src="/assets/img/lattice/instruments.webp" alt="Lattice's instrument page: Krell, Lead, Arp and Bass, each with its hand-drawn art above its settings" width="827" height="982" loading="lazy"></a>
+        <figcaption>The instruments, each with its own art.</figcaption>
+      </figure>
+    </div>
+
+    <ul class="lattice-features">
+      <li>
+        <h3>All keyboard</h3>
+        <p>Keys modelled on the Helix editor: select, then act. The built-in tutor teaches them as you go, and the
+          manual explains every one.</p>
+      </li>
+      <li>
+        <h3>Its own instruments</h3>
+        <p>Eleven, written by hand in Rust: Krell, an alien harpsichord; Switched, a screaming modular; Monochord,
+          a modelled string; and the Rhythmicon drums.</p>
+      </li>
+      <li>
+        <h3>Sampling and chopping</h3>
+        <p>Play sound files, render a loop of your own song and chop it into pieces, or record over the beat with
+          the looper.</p>
+      </li>
+      <li>
+        <h3>Patterns that move</h3>
+        <p>Rules rotate, drift, reverse and transpose a track as it goes round; gestures and locks change a single
+          step; the conductor shapes the tempo.</p>
+      </li>
+    </ul>
+
+    <div class="lattice-why">
+      <h2>Made for an audience of one</h2>
+      <p>I've always liked trackers, but the ones I used never quite matched how I think, so I made the one in my
+        head. Every feature is there because I wanted it. It's well documented and quite usable, and I hope you get
+        something from it, but it's made for me first. <a href="/blog/2026/deeply-personal-software/">The story behind
+        it</a> is on the blog.</p>
+      <p>The source is free to use, change and even sell under the Deeply Personal Software Licence. The one thing it
+        asks is that you make it yours: give what you build on it your own name and face.</p>
+      <p class="muted">Pre-alpha. Made and played on Linux; it builds and passes its tests on macOS and Windows, but
+        I haven't played on them yet.</p>
+      <div class="actions">
+        <a class="btn btn-yellow" href="{{ l.repo }}">Lattice on GitHub</a>
+        <a class="btn btn-ghost" href="{{ l.manual }}">Read the manual</a>
+        <a class="btn btn-ghost" href="{{ site.data.channel.url }}?sub_confirmation=1">Videos on YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/lattice.js?v={{ site.time | date: '%s' }}" defer></script>
